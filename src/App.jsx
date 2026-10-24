@@ -187,7 +187,7 @@ const handleIncome =(event)=>{
 
   return (
     <>
-      <h2 className="app-heading">Expense Tracker</h2>
+      <h1 className="app-heading">Expense Tracker</h1>
       <div className="top-dashboard">
         {/* Section 1: Wallet Balance */}
         <div className="wallet-card">
@@ -212,7 +212,7 @@ const handleIncome =(event)=>{
 
               <input
                 type="number"
-                placeholder="Income amount"
+                placeholder="Income Amount"
                 value={incomeAmount}
                 onChange={(event) => setIncomeAmount(event.target.value)}
                 min="0.01"
