@@ -258,6 +258,7 @@ const handleIncome =(event)=>{
 
               <input
                 type="text"
+                name="title"
                 placeholder="Title"
                 value={expense.title}
                 onChange={(event) =>
@@ -268,6 +269,7 @@ const handleIncome =(event)=>{
 
               <input
                 type="number"
+                name="price"
                 placeholder="Price"
                 value={expense.price}
                 onChange={(event) =>
@@ -279,6 +281,7 @@ const handleIncome =(event)=>{
               />
 
               <select
+                name="category"
                 value={expense.category}
                 onChange={(event) =>
                   setExpense({ ...expense, category: event.target.value })
@@ -295,6 +298,7 @@ const handleIncome =(event)=>{
 
               <input
                 type="date"
+                name="date"
                 value={expense.date}
                 onChange={(event) =>
                   setExpense({ ...expense, date: event.target.value })
